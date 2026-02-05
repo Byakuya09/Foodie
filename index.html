@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Heaven Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-utensils"></i> Food Heaven
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="cart.html" class="cart-link">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Delicious Food Delivered to You</h1>
+            <p>Fresh ingredients, authentic flavors, made with love</p>
+            <a href="#menu" class="btn">Order Now</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <h2>Our Special Dishes</h2>
+        <p class="section-subtitle">Choose from our delicious menu items</p>
+        
+        <div class="menu-items" id="menu-items">
+            <!-- Items will be loaded by JavaScript -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2>Why Choose Us?</h2>
+        <div class="features">
+            <div class="feature">
+                <i class="fas fa-bolt"></i>
+                <h3>Fast Delivery</h3>
+                <p>30 minutes or free</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-leaf"></i>
+                <h3>Fresh Ingredients</h3>
+                <p>Daily sourced produce</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-rupee-sign"></i>
+                <h3>Best Price</h3>
+                <p>Quality food at great prices</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Food Heaven</h3>
+                <p>123 Food Street, Mumbai</p>
+                <p>Open: 10AM - 11PM</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-phone"></i> +91 9876543210</p>
+                <p><i class="fas fa-envelope"></i> order@foodheaven.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Accepting UPI</h3>
+                <div class="upi-icons">
+                    <i class="fab fa-google-pay"></i>
+                    <i class="fab fa-phonepe"></i>
+                    <i class="fas fa-qrcode"></i>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">© 2023 Food Heaven Restaurant</p>
+    </footer>
+
+    <!-- Cart Sidebar (Mobile) -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart" id="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="sidebar-cart-items">
+            <!-- Cart items will appear here -->
+        </div>
+        <div class="cart-total">
+            <h4>Total: ₹<span id="sidebar-total">0</span></h4>
+            <a href="cart.html" class="btn">Checkout</a>
+        </div>
+    </div>
+
+    <!-- Floating Cart Button -->
+    <button class="floating-cart" id="open-cart">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-badge">0</span>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
